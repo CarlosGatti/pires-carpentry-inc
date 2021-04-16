@@ -10,6 +10,7 @@
       let thisForm = this;
 
       let action = thisForm.getAttribute('action');
+
       let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
       
       if( ! action ) {
@@ -48,14 +49,13 @@
     fetch(action, {
       method: 'POST',
       body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest', 'Access-Control-Allow-Origin': '*'}
-      
+      headers: {'X-Requested-With': 'XMLHttpRequest'},
+      mode: 'cors',
     })
     .then(response => {
       if( response.ok ) {
         return response.text()
       } else {
-        console.log(response);
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
     })
