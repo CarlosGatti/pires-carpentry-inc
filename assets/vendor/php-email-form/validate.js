@@ -48,12 +48,14 @@
     fetch(action, {
       method: 'POST',
       body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
+      headers: {'X-Requested-With': 'XMLHttpRequest', 'Access-Control-Allow-Origin': '*'}
+      
     })
     .then(response => {
       if( response.ok ) {
         return response.text()
       } else {
+        console.log(response);
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
     })
