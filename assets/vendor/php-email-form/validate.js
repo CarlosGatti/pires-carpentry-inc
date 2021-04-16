@@ -48,7 +48,7 @@
     fetch(action, {
       method: 'POST',
       body: formData,
-      headers: {'X-Requested-With': 'XMLHttpsRequest'}
+      headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
     .then(response => {
       if( response.ok ) {
