@@ -21,7 +21,7 @@
     'host' => 'smtpout.secureserver.net',
     'username' => 'leandro@pirescarpentryinc.com',
     'password' => '34211694Leandro',
-    'port' => '465'
+    'port' => '587'
   );
   
 
