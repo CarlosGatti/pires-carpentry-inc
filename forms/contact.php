@@ -19,9 +19,9 @@
   
   $contact->smtp = array(
     'host' => 'smtp.gmail.com',
-    'username' => 'csacarlosgatti@gmail.com',
-    'password' => 'Gizelly9dudu8',
-    'port' => '587'
+    'username' => 'portalpirescarpentry@gmail.com',
+    'password' => 'LeandroPiresDouglasPires',
+    'port' => '465'
   );
   
   $contact->add_message( $_POST['name'], 'From');
