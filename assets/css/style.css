@@ -517,7 +517,7 @@ section {
 }
 
 .section-title span {
-  position: absolute;
+  position: relative;
   top: 30px;
   color: #f4f4f4;
   left: 0;
@@ -590,7 +590,7 @@ section {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #ed5b5b;
+  color: #1E1B1F;
 }
 
 .why-us .box h4 {
@@ -683,7 +683,7 @@ section {
   top: -8px;
   height: 100%;
   width: 100%;
-  background: #fce5e5;
+  background: #1E1B1F;
   transition: all .3s ease-out 0s;
   transform: translateZ(-1px);
 }
@@ -706,7 +706,7 @@ section {
 
 .services .icon-box:hover {
   background: #C5C3BE;
-  border-color: #C5C3BE;
+  border-color: #1E1B1F;
   padding: 70px 20px 90px 20px;
 }
 
@@ -719,7 +719,7 @@ section {
 }
 
 .services .icon-box:hover .icon::before {
-  background: #e82d2d;
+  background: #9DA3A6;
 }
 
 .services .icon-box:hover h4 a,
@@ -792,7 +792,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #e82d2d;
+  color: #1E1B1F;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1126,7 +1126,7 @@ section {
   color: #C5C3BE;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #f5a0a0;
+  border: 2px dotted #4A4C4D;
 }
 
 .contact .info-box h3 {
@@ -1354,7 +1354,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ed5b5b;
+  color: #C5C3BE;
   font-size: 18px;
   line-height: 1;
 }
@@ -1427,11 +1427,18 @@ section {
 }
 
 #footer .credits a {
-  color: #e82d2d;
+  color: #C5C3BE;
 }
 
 @media (max-width: 575px) {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+
+.img-about {
+
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }
